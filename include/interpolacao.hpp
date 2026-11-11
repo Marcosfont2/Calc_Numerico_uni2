@@ -21,7 +21,7 @@ void validarPontos(const vector<Ponto>& pontos) {
   for (int i = 0; i < pontos.size(); i++) {
     for (int j = i + 1; j < pontos.size(); j++) {
       if (pontos[i].x == pontos[j].x) {
-        throw invalid_argument("Existem pontos com valores de x repetidos"):
+        throw invalid_argument("Existem pontos com valores de x repetidos");
       }
     }
   }
