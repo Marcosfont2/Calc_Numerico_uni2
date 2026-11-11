@@ -1,0 +1,1 @@
+# Vetor b gerado aleatoriamente (-50 a 50)
