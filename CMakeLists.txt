@@ -16,3 +16,4 @@ add_executable(trabalho
 )
 
 add_executable(teste_interpolacao tests/teste_interpolacao.cpp src/gauss.cpp src/operations.cpp)
+add_executable(problemas tests/problemas.cpp src/gauss.cpp src/operations.cpp)

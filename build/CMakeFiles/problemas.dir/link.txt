@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/problemas.dir/tests/problemas.cpp.o CMakeFiles/problemas.dir/src/gauss.cpp.o CMakeFiles/problemas.dir/src/operations.cpp.o -o problemas 

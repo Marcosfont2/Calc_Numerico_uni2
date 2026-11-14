@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = /workspaces/Calc_Numerico_uni2/build
 # The main recursive "all" target.
 all: CMakeFiles/trabalho.dir/all
 all: CMakeFiles/teste_interpolacao.dir/all
+all: CMakeFiles/problemas.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,6 +75,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/trabalho.dir/clean
 clean: CMakeFiles/teste_interpolacao.dir/clean
+clean: CMakeFiles/problemas.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -83,7 +85,7 @@ clean: CMakeFiles/teste_interpolacao.dir/clean
 CMakeFiles/trabalho.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/trabalho.dir/build.make CMakeFiles/trabalho.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/trabalho.dir/build.make CMakeFiles/trabalho.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/Calc_Numerico_uni2/build/CMakeFiles --progress-num=5,6,7,8,9,10,11 "Built target trabalho"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/Calc_Numerico_uni2/build/CMakeFiles --progress-num=9,10,11,12,13,14,15 "Built target trabalho"
 .PHONY : CMakeFiles/trabalho.dir/all
 
 # Build rule for subdir invocation for target.
@@ -109,7 +111,7 @@ CMakeFiles/trabalho.dir/clean:
 CMakeFiles/teste_interpolacao.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste_interpolacao.dir/build.make CMakeFiles/teste_interpolacao.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste_interpolacao.dir/build.make CMakeFiles/teste_interpolacao.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/Calc_Numerico_uni2/build/CMakeFiles --progress-num=1,2,3,4 "Built target teste_interpolacao"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/Calc_Numerico_uni2/build/CMakeFiles --progress-num=5,6,7,8 "Built target teste_interpolacao"
 .PHONY : CMakeFiles/teste_interpolacao.dir/all
 
 # Build rule for subdir invocation for target.
@@ -127,6 +129,32 @@ teste_interpolacao: CMakeFiles/teste_interpolacao.dir/rule
 CMakeFiles/teste_interpolacao.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste_interpolacao.dir/build.make CMakeFiles/teste_interpolacao.dir/clean
 .PHONY : CMakeFiles/teste_interpolacao.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/problemas.dir
+
+# All Build rule for target.
+CMakeFiles/problemas.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/problemas.dir/build.make CMakeFiles/problemas.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/problemas.dir/build.make CMakeFiles/problemas.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/Calc_Numerico_uni2/build/CMakeFiles --progress-num=1,2,3,4 "Built target problemas"
+.PHONY : CMakeFiles/problemas.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/problemas.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/Calc_Numerico_uni2/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/problemas.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/Calc_Numerico_uni2/build/CMakeFiles 0
+.PHONY : CMakeFiles/problemas.dir/rule
+
+# Convenience name for target.
+problemas: CMakeFiles/problemas.dir/rule
+.PHONY : problemas
+
+# clean rule for target.
+CMakeFiles/problemas.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/problemas.dir/build.make CMakeFiles/problemas.dir/clean
+.PHONY : CMakeFiles/problemas.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

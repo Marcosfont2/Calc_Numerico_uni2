@@ -142,6 +142,19 @@ teste_interpolacao/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste_interpolacao.dir/build.make CMakeFiles/teste_interpolacao.dir/build
 .PHONY : teste_interpolacao/fast
 
+#=============================================================================
+# Target rules for targets named problemas
+
+# Build rule for target.
+problemas: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 problemas
+.PHONY : problemas
+
+# fast build rule for target.
+problemas/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/problemas.dir/build.make CMakeFiles/problemas.dir/build
+.PHONY : problemas/fast
+
 src/gauss.o: src/gauss.cpp.o
 .PHONY : src/gauss.o
 
@@ -149,6 +162,7 @@ src/gauss.o: src/gauss.cpp.o
 src/gauss.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/trabalho.dir/build.make CMakeFiles/trabalho.dir/src/gauss.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste_interpolacao.dir/build.make CMakeFiles/teste_interpolacao.dir/src/gauss.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/problemas.dir/build.make CMakeFiles/problemas.dir/src/gauss.cpp.o
 .PHONY : src/gauss.cpp.o
 
 src/gauss.i: src/gauss.cpp.i
@@ -158,6 +172,7 @@ src/gauss.i: src/gauss.cpp.i
 src/gauss.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/trabalho.dir/build.make CMakeFiles/trabalho.dir/src/gauss.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste_interpolacao.dir/build.make CMakeFiles/teste_interpolacao.dir/src/gauss.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/problemas.dir/build.make CMakeFiles/problemas.dir/src/gauss.cpp.i
 .PHONY : src/gauss.cpp.i
 
 src/gauss.s: src/gauss.cpp.s
@@ -167,6 +182,7 @@ src/gauss.s: src/gauss.cpp.s
 src/gauss.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/trabalho.dir/build.make CMakeFiles/trabalho.dir/src/gauss.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste_interpolacao.dir/build.make CMakeFiles/teste_interpolacao.dir/src/gauss.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/problemas.dir/build.make CMakeFiles/problemas.dir/src/gauss.cpp.s
 .PHONY : src/gauss.cpp.s
 
 src/io.o: src/io.cpp.o
@@ -272,6 +288,7 @@ src/operations.o: src/operations.cpp.o
 src/operations.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/trabalho.dir/build.make CMakeFiles/trabalho.dir/src/operations.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste_interpolacao.dir/build.make CMakeFiles/teste_interpolacao.dir/src/operations.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/problemas.dir/build.make CMakeFiles/problemas.dir/src/operations.cpp.o
 .PHONY : src/operations.cpp.o
 
 src/operations.i: src/operations.cpp.i
@@ -281,6 +298,7 @@ src/operations.i: src/operations.cpp.i
 src/operations.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/trabalho.dir/build.make CMakeFiles/trabalho.dir/src/operations.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste_interpolacao.dir/build.make CMakeFiles/teste_interpolacao.dir/src/operations.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/problemas.dir/build.make CMakeFiles/problemas.dir/src/operations.cpp.i
 .PHONY : src/operations.cpp.i
 
 src/operations.s: src/operations.cpp.s
@@ -290,7 +308,32 @@ src/operations.s: src/operations.cpp.s
 src/operations.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/trabalho.dir/build.make CMakeFiles/trabalho.dir/src/operations.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste_interpolacao.dir/build.make CMakeFiles/teste_interpolacao.dir/src/operations.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/problemas.dir/build.make CMakeFiles/problemas.dir/src/operations.cpp.s
 .PHONY : src/operations.cpp.s
+
+tests/problemas.o: tests/problemas.cpp.o
+.PHONY : tests/problemas.o
+
+# target to build an object file
+tests/problemas.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/problemas.dir/build.make CMakeFiles/problemas.dir/tests/problemas.cpp.o
+.PHONY : tests/problemas.cpp.o
+
+tests/problemas.i: tests/problemas.cpp.i
+.PHONY : tests/problemas.i
+
+# target to preprocess a source file
+tests/problemas.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/problemas.dir/build.make CMakeFiles/problemas.dir/tests/problemas.cpp.i
+.PHONY : tests/problemas.cpp.i
+
+tests/problemas.s: tests/problemas.cpp.s
+.PHONY : tests/problemas.s
+
+# target to generate assembly for a file
+tests/problemas.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/problemas.dir/build.make CMakeFiles/problemas.dir/tests/problemas.cpp.s
+.PHONY : tests/problemas.cpp.s
 
 tests/teste_interpolacao.o: tests/teste_interpolacao.cpp.o
 .PHONY : tests/teste_interpolacao.o
@@ -324,6 +367,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... problemas"
 	@echo "... teste_interpolacao"
 	@echo "... trabalho"
 	@echo "... src/gauss.o"
@@ -344,6 +388,9 @@ help:
 	@echo "... src/operations.o"
 	@echo "... src/operations.i"
 	@echo "... src/operations.s"
+	@echo "... tests/problemas.o"
+	@echo "... tests/problemas.i"
+	@echo "... tests/problemas.s"
 	@echo "... tests/teste_interpolacao.o"
 	@echo "... tests/teste_interpolacao.i"
 	@echo "... tests/teste_interpolacao.s"
