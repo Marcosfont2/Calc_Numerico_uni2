@@ -94,10 +94,10 @@ void problema2_3() {
 void problema2_4a() {
     vector<Ponto> dados = obterDadosCO2();
     vector<Ponto> pontos = {
-        dados[2], // 1980
         dados[3], // 1990
         dados[4], // 2000
-        dados[5]  // 2010
+        dados[5], // 2010
+        dados[6]  // 2020
     };
     double ano = 2005.0;
     double estimativa = lagrange(pontos, ano);
