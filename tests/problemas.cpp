@@ -58,7 +58,7 @@ void problema2_2() {
     double valorReal = exp(xTeste);
     cout << fixed << setprecision(10) << endl;
     cout << "Problema 2.2" << endl;
-    cout << "Valor de x: " << endl;
+    cout << "Valor de x: " << xTeste << endl;
     cout << "Valor real de e^x: " << valorReal << endl;
     for (int grau : graus) {
         vector <Ponto> pontos = gerarPontosExponencial(grau);
