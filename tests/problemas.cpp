@@ -27,7 +27,7 @@ vector<Ponto> gerarPontosRacional(int grau) {
     vector<Ponto> pontos;
     int quantidade = grau + 1;
     double inicio = 0.0;
-    double fim = 0.0;
+    double fim = 4.0;
     double intervalo = (fim - inicio) / grau;
     for (int i = 0; i < quantidade; i++) {
         double x = inicio + i * intervalo;
