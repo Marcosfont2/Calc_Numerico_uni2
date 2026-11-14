@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/trabalho.dir/src/main.cpp.o CMakeFiles/trabalho.dir/src/gauss.cpp.o CMakeFiles/trabalho.dir/src/lu.cpp.o CMakeFiles/trabalho.dir/src/jacobi.cpp.o CMakeFiles/trabalho.dir/src/operations.cpp.o CMakeFiles/trabalho.dir/src/io.cpp.o -o trabalho 

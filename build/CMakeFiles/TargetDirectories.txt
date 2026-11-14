@@ -1,0 +1,4 @@
+/workspaces/Calc_Numerico_uni2/build/CMakeFiles/trabalho.dir
+/workspaces/Calc_Numerico_uni2/build/CMakeFiles/teste_interpolacao.dir
+/workspaces/Calc_Numerico_uni2/build/CMakeFiles/edit_cache.dir
+/workspaces/Calc_Numerico_uni2/build/CMakeFiles/rebuild_cache.dir

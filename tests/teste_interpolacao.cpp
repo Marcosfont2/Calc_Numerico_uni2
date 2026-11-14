@@ -15,11 +15,24 @@ int main() {
     double resultadoLagrange = lagrange(pontos, x);
     double resultadoNewton = newton(pontos, x);
 
+    cout << "Teste de Interpolacao" << endl;
     cout << "Valor de x: " << x << endl;
     cout << "\nMetodo de Lagrange: " << resultadoLagrange << endl;
     cout << "Metodo de Newton: " << resultadoNewton << endl;
   } catch (const exception& erro) {
     cout << "Erro: " << erro.what() << endl;
   }
+  cout << "/nTeste de validacao dos pontos" << endl;
+  vector<Ponto> pontosInvalidos = {
+    {1.0, 2.0},
+    {1.0, 4.0}  
+  };
+  try {
+    validarPontos(pontosInvalidos);
+    cout << "Erro: pontos repetidos foram aceitos" << endl;
+  } catch(const invalid_argument& erro) {
+    cout << "Validacao funcionando: " << erro.what() << endl;
+  };
+  
   return 0;
 }
