@@ -15,4 +15,4 @@ add_executable(trabalho
     src/io.cpp
 )
 
-add_executable(teste_interpolacao tests/teste_interpolacao.cpp)
+add_executable(teste_interpolacao tests/teste_interpolacao.cpp src/gauss.cpp src/operations.cpp)

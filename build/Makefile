@@ -148,6 +148,7 @@ src/gauss.o: src/gauss.cpp.o
 # target to build an object file
 src/gauss.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/trabalho.dir/build.make CMakeFiles/trabalho.dir/src/gauss.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste_interpolacao.dir/build.make CMakeFiles/teste_interpolacao.dir/src/gauss.cpp.o
 .PHONY : src/gauss.cpp.o
 
 src/gauss.i: src/gauss.cpp.i
@@ -156,6 +157,7 @@ src/gauss.i: src/gauss.cpp.i
 # target to preprocess a source file
 src/gauss.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/trabalho.dir/build.make CMakeFiles/trabalho.dir/src/gauss.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste_interpolacao.dir/build.make CMakeFiles/teste_interpolacao.dir/src/gauss.cpp.i
 .PHONY : src/gauss.cpp.i
 
 src/gauss.s: src/gauss.cpp.s
@@ -164,6 +166,7 @@ src/gauss.s: src/gauss.cpp.s
 # target to generate assembly for a file
 src/gauss.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/trabalho.dir/build.make CMakeFiles/trabalho.dir/src/gauss.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste_interpolacao.dir/build.make CMakeFiles/teste_interpolacao.dir/src/gauss.cpp.s
 .PHONY : src/gauss.cpp.s
 
 src/io.o: src/io.cpp.o
@@ -268,6 +271,7 @@ src/operations.o: src/operations.cpp.o
 # target to build an object file
 src/operations.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/trabalho.dir/build.make CMakeFiles/trabalho.dir/src/operations.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste_interpolacao.dir/build.make CMakeFiles/teste_interpolacao.dir/src/operations.cpp.o
 .PHONY : src/operations.cpp.o
 
 src/operations.i: src/operations.cpp.i
@@ -276,6 +280,7 @@ src/operations.i: src/operations.cpp.i
 # target to preprocess a source file
 src/operations.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/trabalho.dir/build.make CMakeFiles/trabalho.dir/src/operations.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste_interpolacao.dir/build.make CMakeFiles/teste_interpolacao.dir/src/operations.cpp.i
 .PHONY : src/operations.cpp.i
 
 src/operations.s: src/operations.cpp.s
@@ -284,6 +289,7 @@ src/operations.s: src/operations.cpp.s
 # target to generate assembly for a file
 src/operations.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/trabalho.dir/build.make CMakeFiles/trabalho.dir/src/operations.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste_interpolacao.dir/build.make CMakeFiles/teste_interpolacao.dir/src/operations.cpp.s
 .PHONY : src/operations.cpp.s
 
 tests/teste_interpolacao.o: tests/teste_interpolacao.cpp.o

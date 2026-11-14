@@ -176,4 +176,5 @@ CMakeFiles/teste_interpolacao.dir/tests/teste_interpolacao.cpp.o: \
  /usr/include/c++/13/tr1/modified_bessel_func.tcc \
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
- /usr/include/c++/13/tr1/riemann_zeta.tcc
+ /usr/include/c++/13/tr1/riemann_zeta.tcc \
+ /workspaces/Calc_Numerico_uni2/include/sistemas_lineares.hpp

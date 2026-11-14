@@ -83,17 +83,49 @@ CMakeFiles/teste_interpolacao.dir/tests/teste_interpolacao.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/teste_interpolacao.dir/tests/teste_interpolacao.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/Calc_Numerico_uni2/tests/teste_interpolacao.cpp -o CMakeFiles/teste_interpolacao.dir/tests/teste_interpolacao.cpp.s
 
+CMakeFiles/teste_interpolacao.dir/src/gauss.cpp.o: CMakeFiles/teste_interpolacao.dir/flags.make
+CMakeFiles/teste_interpolacao.dir/src/gauss.cpp.o: /workspaces/Calc_Numerico_uni2/src/gauss.cpp
+CMakeFiles/teste_interpolacao.dir/src/gauss.cpp.o: CMakeFiles/teste_interpolacao.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/Calc_Numerico_uni2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/teste_interpolacao.dir/src/gauss.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/teste_interpolacao.dir/src/gauss.cpp.o -MF CMakeFiles/teste_interpolacao.dir/src/gauss.cpp.o.d -o CMakeFiles/teste_interpolacao.dir/src/gauss.cpp.o -c /workspaces/Calc_Numerico_uni2/src/gauss.cpp
+
+CMakeFiles/teste_interpolacao.dir/src/gauss.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/teste_interpolacao.dir/src/gauss.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/Calc_Numerico_uni2/src/gauss.cpp > CMakeFiles/teste_interpolacao.dir/src/gauss.cpp.i
+
+CMakeFiles/teste_interpolacao.dir/src/gauss.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/teste_interpolacao.dir/src/gauss.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/Calc_Numerico_uni2/src/gauss.cpp -o CMakeFiles/teste_interpolacao.dir/src/gauss.cpp.s
+
+CMakeFiles/teste_interpolacao.dir/src/operations.cpp.o: CMakeFiles/teste_interpolacao.dir/flags.make
+CMakeFiles/teste_interpolacao.dir/src/operations.cpp.o: /workspaces/Calc_Numerico_uni2/src/operations.cpp
+CMakeFiles/teste_interpolacao.dir/src/operations.cpp.o: CMakeFiles/teste_interpolacao.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/Calc_Numerico_uni2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/teste_interpolacao.dir/src/operations.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/teste_interpolacao.dir/src/operations.cpp.o -MF CMakeFiles/teste_interpolacao.dir/src/operations.cpp.o.d -o CMakeFiles/teste_interpolacao.dir/src/operations.cpp.o -c /workspaces/Calc_Numerico_uni2/src/operations.cpp
+
+CMakeFiles/teste_interpolacao.dir/src/operations.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/teste_interpolacao.dir/src/operations.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/Calc_Numerico_uni2/src/operations.cpp > CMakeFiles/teste_interpolacao.dir/src/operations.cpp.i
+
+CMakeFiles/teste_interpolacao.dir/src/operations.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/teste_interpolacao.dir/src/operations.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/Calc_Numerico_uni2/src/operations.cpp -o CMakeFiles/teste_interpolacao.dir/src/operations.cpp.s
+
 # Object files for target teste_interpolacao
 teste_interpolacao_OBJECTS = \
-"CMakeFiles/teste_interpolacao.dir/tests/teste_interpolacao.cpp.o"
+"CMakeFiles/teste_interpolacao.dir/tests/teste_interpolacao.cpp.o" \
+"CMakeFiles/teste_interpolacao.dir/src/gauss.cpp.o" \
+"CMakeFiles/teste_interpolacao.dir/src/operations.cpp.o"
 
 # External object files for target teste_interpolacao
 teste_interpolacao_EXTERNAL_OBJECTS =
 
 teste_interpolacao: CMakeFiles/teste_interpolacao.dir/tests/teste_interpolacao.cpp.o
+teste_interpolacao: CMakeFiles/teste_interpolacao.dir/src/gauss.cpp.o
+teste_interpolacao: CMakeFiles/teste_interpolacao.dir/src/operations.cpp.o
 teste_interpolacao: CMakeFiles/teste_interpolacao.dir/build.make
 teste_interpolacao: CMakeFiles/teste_interpolacao.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/workspaces/Calc_Numerico_uni2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable teste_interpolacao"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/workspaces/Calc_Numerico_uni2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable teste_interpolacao"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/teste_interpolacao.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/teste_interpolacao.dir/tests/teste_interpolacao.cpp.o -o teste_interpolacao 
+/usr/bin/c++ CMakeFiles/teste_interpolacao.dir/tests/teste_interpolacao.cpp.o CMakeFiles/teste_interpolacao.dir/src/gauss.cpp.o CMakeFiles/teste_interpolacao.dir/src/operations.cpp.o -o teste_interpolacao 
