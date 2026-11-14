@@ -22,7 +22,7 @@ int main() {
   } catch (const exception& erro) {
     cout << "Erro: " << erro.what() << endl;
   }
-  cout << "/nTeste de validacao dos pontos" << endl;
+  cout << "\nTeste de validacao dos pontos" << endl;
   vector<Ponto> pontosInvalidos = {
     {1.0, 2.0},
     {1.0, 4.0}  
