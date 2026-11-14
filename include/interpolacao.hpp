@@ -5,6 +5,7 @@
 #include <vector>
 #include <cmath>
 #include <stdexcept>
+#include "sistemas_lineares.hpp"
 
 using namespace std;
 
@@ -33,14 +34,14 @@ double lagrange(const vector<Ponto>& pontos, double x) {
   double resultado = 0.0;
   int n = pontos.size();
   for (int i = 0; i < n; i++) {
-    // Calcula cada termo da formula de Lagrange
+    // calcula cada termo da formula de Lagrange
     double termo  = pontos[i].y;
     for (int j = 0; j < n; j++) {
       if (i != j) {
         termo *= (x - pontos[j].x) / (pontos[i].x - pontos[j].x);
       }
     }
-    // Soma o termo calculado ao resultado final
+    // soma o termo calculado ao resultado final
     resultado += termo;
   }
   return resultado;
@@ -50,23 +51,50 @@ double lagrange(const vector<Ponto>& pontos, double x) {
 double newton(const vector<Ponto>& pontos, double x) {
   validarPontos(pontos);
   int n = pontos.size();
-  // Armazena os valores de y, que sao transformados nos coeficientes
+  // armazena os valores de y, que sao transformados nos coeficientes
   vector<double> coeficientes(n);
   for (int i = 0; i < n; i++) {
     coeficientes[i] = pontos[i].y;
   }
-  // Calcula os coeficientes por meio das diferenas divididas
+  // calcula os coeficientes por meio das diferenas divididas
   for (int i = 1; i < n; i++) {
     for (int j = n - 1; j >= i; j--) {
       coeficientes[j] = (coeficientes[j] - coeficientes[j - 1]) / (pontos[j].x - pontos[j - i].x);
     }
   }
-  // Avalia o polinomio utilizando a forma de Newton
+  // avalia o polinomio utilizando a forma de Newton
   double resultado = coeficientes[n - 1];
   for (int i = n - 2; i >= 0; i--) {
     resultado = coeficientes[i] + (x - pontos[i].x) * resultado;
   }
   return resultado;
+}
+
+// Metodo de sistema linear com eliminicao de Gauss
+double interpolacaoGauss(const vector<Ponto>& pontos, double x) {
+  validarPontos(pontos);
+  int n = pontos.size();
+  // monta a matriz do sistema e o vetor dos resultados
+  linear_systems::Matrix A(n, linear_systems::Vector(n));
+  linear_systems::Vector b(n);
+  for (int i = 0; i < n; i++) {
+    double potencia = 1.0;
+    for (int j = 0; j < n; j++) {
+      A[i][j] = potencia;
+      potencia *= pontos[i].x;
+    }
+    b[i] = pontos[i].y;
+  }
+  // resolve o sistema pra encontrar os coeficientes
+  linear_systems::GaussResult resultado = linear_systems::gaussianElimination(A, b);
+  // calcula o polinomio no valor de x informado
+  double valor = 0.0;
+  double potencia = 1.0;
+  for (int i = 0; i < n; i++) {
+    valor += resultado.x[i] * potencia;
+    potencia *= x;
+  }
+  return valor; 
 }
 
 #endif

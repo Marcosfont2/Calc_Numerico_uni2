@@ -14,11 +14,13 @@ int main() {
 
     double resultadoLagrange = lagrange(pontos, x);
     double resultadoNewton = newton(pontos, x);
+    double resultadoGauss = interpolacaoGauss(pontos, x);
 
     cout << "Teste de Interpolacao" << endl;
     cout << "Valor de x: " << x << endl;
     cout << "\nMetodo de Lagrange: " << resultadoLagrange << endl;
     cout << "Metodo de Newton: " << resultadoNewton << endl;
+    cout << "Metodo por sistema linear (Gauss): " << resultadoGauss << endl;
   } catch (const exception& erro) {
     cout << "Erro: " << erro.what() << endl;
   }
